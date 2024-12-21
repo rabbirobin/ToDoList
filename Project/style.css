@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/image/bg.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.todo-container{
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 20px;
+}
+
+#task{
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #b4b2b2;
+}
+
+#addTask{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebe8e8;
+    border: 1px solid #b4b2b2;
+    padding: 8px;
+    border-radius: 7px;
+    margin-top: 5px;
+    align-items: center;
+
+}
+
+#delete-btn{
+    color: red;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #b4b2b2;
+    padding: 5px;
+    border-radius: 5px;
+}

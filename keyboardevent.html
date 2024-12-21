@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard Events</title>
+</head>
+<body>
+
+<h1>Press any key</h1>
+<p id="output"></p>
+
+<script>
+  // Listening for a keydown event on the whole document
+  document.addEventListener('keydown', function(event) {
+    const keyName = event.key;  // Get the name of the pressed key
+    document.getElementById('output').textContent = `Key pressed: ${keyName}`;
+  });
+
+  // Listening for a keyup event on the whole document
+  document.addEventListener('keyup', function(event) {
+    const keyName = event.key;  // Get the name of the released key
+    document.getElementById('output').textContent = `Key released: ${keyName}`;
+  });
+</script>
+
+</body>
+</html>

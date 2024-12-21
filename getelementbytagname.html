@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By Tag name</title>
+</head>
+<body>
+    <p>Get Elemet By Tag Name</p>
+    <h1>Get Elemet By Tag Name H1</h1>
+    <p>Get Elemet By Tag Name</p>
+
+    <script>
+        const sections = document.getElementsByTagName("p");
+        console.log(sections.length);
+
+        for(let i=0; i<sections.length; i++){
+            if(i == 1){
+                sections[i].innerHTML = "Change";
+                sections[i].style = "color:red; font-size:40px"
+            }
+            else {
+                
+            sections[i].style = "color:green; font-size:25px"
+            }
+
+            // p[1].innerHTML = "Change";
+            // p[0].style = "color:red; font-size:40px"
+            // p[0].style.color = "red"
+            
+
+        }
+    </script>
+    
+    
+</body>
+</html>
